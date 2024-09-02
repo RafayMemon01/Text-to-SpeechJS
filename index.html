@@ -11,8 +11,12 @@
     <div class="container">
         <h2>JavaScript Speech Synthesis Utterance</h2>
         <input id="text" type="text" placeholder="Type something...">
-        <select id="voiceSelect"></select> <!-- Voice selection dropdown -->
-        <button onclick="speak()">Speak</button>
+        <select id="voiceSelect"></select><br> <!-- Voice selection dropdown -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em;">
+
+            <button onclick="speak()">Speak</button>
+            <button onclick="stopSpeaking()">Stop</button>
+        </div>
     </div>
     <script src="./script.js"></script>
     

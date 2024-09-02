@@ -41,3 +41,11 @@ const speak = () => {
         console.error("Error speaking text:", error);
     }
 }
+
+const stopSpeaking = () => {
+    try {
+        speechSynthesis.cancel();
+    } catch (error) {
+        console.error("Error stopping speech:", error);
+    }
+}
